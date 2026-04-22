@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | The Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0f11;
+            color: #d1d5db;
+        }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .eco-card:hover {
+            border-color: #64748b;
+            transform: translateY(-2px);
+        }
+        .circle-animation {
+            border: 1px solid #334155;
+            border-radius: 50%;
+            animation: pulse 4s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="flex justify-between items-center px-10 py-6 sticky top-0 bg-[#0d0f11]/90 backdrop-blur-md z-50 border-b border-white/5">
+        <a href="index.html" class="flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-slate-500 hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            Home
+        </a>
+        <div class="text-xl font-bold heading-font tracking-tighter uppercase">Nova / Ecosystem</div>
+        <div class="w-16"></div> </nav>
+
+    <header class="py-24 px-10 text-center max-w-5xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-bold heading-font mb-8 tracking-tighter">A Circular Reality.</h1>
+        <p class="text-slate-400 text-lg md:text-xl font-light leading-relaxed">
+            Technology shouldn't end up in a landfill. The Nova Ecosystem is built on the principle of perpetual utility—where every component is reused, recycled, or reimagined.
+        </p>
+    </header>
+
+    <section class="pb-32 px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="glass p-12 eco-card transition-all duration-500 relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-slate-500/5 rounded-full blur-3xl"></div>
+                <h3 class="text-3xl heading-font mb-6">Open Module Protocol</h3>
+                <p class="text-slate-400 font-light mb-8">
+                    We’ve opened our hardware schematics. Whether you’re a developer building a specialized medical sensor or a designer creating 3D-printed custom covers, the Nova Dev Portal provides the SDKs and CAD files you need.
+                </p>
+                <a href="#" class="inline-block border-b border-slate-500 pb-1 text-[10px] uppercase tracking-widest hover:text-white transition">Visit Dev Portal</a>
+            </div>
+
+            <div class="glass p-12 eco-card transition-all duration-500 relative overflow-hidden">
+                <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-slate-500/5 rounded-full blur-3xl"></div>
+                <h3 class="text-3xl heading-font mb-6">Module Recycling</h3>
+                <p class="text-slate-400 font-light mb-8">
+                    When you upgrade your Core or Camera, your old module isn't waste. Send it back to us for Nova Credits. We refurbish it for the secondary market or harvest its raw materials—Aluminum, Brass, and Gold—for future builds.
+                </p>
+                <a href="#" class="inline-block border-b border-slate-500 pb-1 text-[10px] uppercase tracking-widest hover:text-white transition">View Trade-in Values</a>
+            </div>
+
+            <div class="md:col-span-2 glass aspect-[21/9] flex items-center justify-center relative overflow-hidden border-slate-800">
+                <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover opacity-30">
+                    <source src="ecosystem-loop.mp4" type="video/mp4">
+                </video>
+                <div class="z-10 text-center px-6">
+                    <h2 class="text-4xl heading-font mb-4">60% Reduction in E-Waste</h2>
+                    <p class="text-[10px] uppercase tracking-[0.4em] text-slate-500">Validated by the Global Sustainability Initiative 2026</p>
+                </div>
+            </div>
+
+            <div class="glass p-12 eco-card transition-all duration-500">
+                <h3 class="text-3xl heading-font mb-6">Seamless Transition</h3>
+                <p class="text-slate-400 font-light">
+                    The Nova Horizon OS ensures that your data lives independently of your hardware. Switch modules or even swap the entire chassis without ever losing a photo, a setting, or a memory.
+                </p>
+            </div>
+
+            <div class="glass p-12 eco-card transition-all duration-500">
+                <h3 class="text-3xl heading-font mb-6">Customization Hub</h3>
+                <p class="text-slate-400 font-light">
+                    Browse community-designed 3D printable back-covers, leather wraps, and aesthetic hardware skins. Nova belongs to its users, not just its makers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-32 border-t border-white/5 text-center">
+        <div class="circle-animation w-32 h-32 mx-auto mb-12 flex items-center justify-center">
+            <div class="w-2 h-2 bg-white rounded-full"></div>
+        </div>
+        <h2 class="text-4xl heading-font mb-8">Ready to Build Your Future?</h2>
+        <a href="modulestore.html" class="bg-white text-black px-12 py-5 font-bold uppercase tracking-widest text-[10px] hover:bg-slate-200 transition">Enter the Store</a>
+    </section>
+
+</body>
+</html>
