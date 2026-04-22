@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETERNA | The Last Phone You'll Ever Buy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1c1e; /* Deep Slate */
+            color: #e2e8f0;
+        }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #94a3b8, #f8fafc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="flex justify-between items-center px-8 py-6 sticky top-0 z-50 glass">
+        <div class="text-2xl font-bold heading-font tracking-tighter uppercase">Aeterna</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-slate-400">
+            <a href="#" class="hover:text-white transition">Modules</a>
+            <a href="#" class="hover:text-white transition">Sustainability</a>
+            <a href="#" class="hover:text-white transition">Build Yours</a>
+        </div>
+        <button class="px-5 py-2 border border-slate-500 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition">Reserve Now</button>
+    </nav>
+
+    <header class="relative h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="absolute inset-0 overflow-hidden -z-10">
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-slate-800 rounded-full blur-[120px] opacity-20"></div>
+        </div>
+        
+        <h1 class="text-5xl md:text-8xl font-light heading-font mb-6 gradient-text">Infinite Evolution.</h1>
+        <p class="max-w-2xl text-slate-400 text-lg md:text-xl font-light leading-relaxed">
+            Stop replacing your phone. Start evolving it. A professional-grade ecosystem where every component is an upgrade away.
+        </p>
+        <div class="mt-12 flex flex-col md:flex-row gap-6">
+            <button class="bg-slate-200 text-slate-900 px-10 py-4 font-semibold hover:bg-white transition">Configure Module 01</button>
+            <button class="border border-slate-700 px-10 py-4 font-semibold hover:bg-slate-800 transition">Watch the Assembly</button>
+        </div>
+    </header>
+
+    <section class="py-24 px-8 bg-[#141517]">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl heading-font uppercase tracking-widest border-l-4 border-slate-500 pl-6">The Core Architecture</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-sm group hover:border-slate-400 transition-all">
+                    <span class="text-xs text-slate-500 font-mono">01. OPTICS</span>
+                    <h3 class="text-2xl mt-4 mb-4 heading-font">Camera Array</h3>
+                    <p class="text-slate-400 font-light mb-6">Swap between a 108MP Studio sensor or an IR Thermal unit in seconds. Physical locking mechanism ensures zero lag.</p>
+                    <div class="h-1 bg-slate-800 w-full overflow-hidden">
+                        <div class="h-full bg-slate-400 w-1/3 group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-sm group hover:border-slate-400 transition-all">
+                    <span class="text-xs text-slate-500 font-mono">02. COMPUTE</span>
+                    <h3 class="text-2xl mt-4 mb-4 heading-font">Neural Core</h3>
+                    <p class="text-slate-400 font-light mb-6">Upgrade your RAM and Processor without changing your chassis. Future-proof hardware for the next decade.</p>
+                    <div class="h-1 bg-slate-800 w-full overflow-hidden">
+                        <div class="h-full bg-slate-400 w-1/2 group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-sm group hover:border-slate-400 transition-all">
+                    <span class="text-xs text-slate-500 font-mono">03. ENERGY</span>
+                    <h3 class="text-2xl mt-4 mb-4 heading-font">Battery Cells</h3>
+                    <p class="text-slate-400 font-light mb-6">Hot-swappable power. Choose high-capacity for travel or ultra-light for daily use. 100% recyclable cells.</p>
+                    <div class="h-1 bg-slate-800 w-full overflow-hidden">
+                        <div class="h-full bg-slate-400 w-1/4 group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-8 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl heading-font mb-12">Built for Longevity</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div>
+                    <p class="text-3xl font-light">60%</p>
+                    <p class="text-xs uppercase tracking-tighter text-slate-500">Less E-Waste</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-light">4th Gen</p>
+                    <p class="text-xs uppercase tracking-tighter text-slate-500">Slate Chassis</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-light">Zero</p>
+                    <p class="text-xs uppercase tracking-tighter text-slate-500">Planned Obsolescence</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-light">12</p>
+                    <p class="text-xs uppercase tracking-tighter text-slate-500">Interchange Ports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 border-t border-slate-800 text-center">
+        <p class="text-slate-600 text-xs tracking-widest uppercase">© 2026 Aeterna Modular Systems. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
